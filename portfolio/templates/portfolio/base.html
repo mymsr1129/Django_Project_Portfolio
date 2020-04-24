@@ -11,47 +11,57 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="{% static 'portfolio/custom.css' %}">
-
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" href="{% static 'portfolio/myLogo.png' %}">
 
-  <title>Mel Relly</title>
+  <title>MelWorx</title>
 </head>
 
 <body>
 
-  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static 'portfolio/myLogo.png' %}" width="50" height="50" class="d-inline-block align-top" alt="My Logo">
-        <span>Mel Relly</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse text-center" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% static 'portfolio/WorkVisa.pdf' %}">Work Visa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/melchor-relatado-98457995/"  target="_blank">LinkedIn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="" >Twitter</a>
-          </li>
-          <li>
-            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    {% block content %}{% endblock %}
+<div class="navbar navbar-expand-sm bg-dark navbar-dark text-white">
+   <a class="navbar-brand" href="{% url 'home' %}">
+     <img src="{% static 'portfolio/myLogo.png' %}" width="50" height="50" class="d-inline-block align-top" alt="My Logo"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+   <div class="container">
+   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+  <ul class="navbar-nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'admin' %}">ADMIN  |</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">CLIENT  |</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">TEAM LEADER  |</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">INSTALLER  |</a>
+    </li>
+
+    <li class="nav-item text-white ">
+            <a class="nav-link" href="https://www.installworx.co.nz"  target="_blank">INSTALLWORX  | </a>
+    </li>
+
+     </ul>
+   </div>
   </div>
+</div>
+</nav>
+
+
+
+    {% block content %}{% endblock %}
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
