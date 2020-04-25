@@ -8,36 +8,38 @@
         <h3>Admin</h3>
 
             <div class="btn-group-vertical">
-
+                <div class="container" >
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
                     ADD ITEM</button>
                     <div class="dropdown-menu">
-                    <a class="dropdown-item" href="{% url 'admin_add_client' %}">Add Client</a>
-                    <a class="dropdown-item" href="{% url 'admin_add_user' %}">Add User</a>
-                    <a class="dropdown-item" href="{% url 'admin_add_product' %}">Add Product</a>
+                        <a class="dropdown-item" href="{% url 'admin_add_client' %}">Add Client</a>
+                        <a class="dropdown-item" href="{% url 'admin_add_user' %}">Add User</a>
+                        <a class="dropdown-item" href="{% url 'admin_add_product' %}">Add Product</a>
                     </div>
+                </div>
 
-
-
+                <div class="container" >
                   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
                     EDIT ITEM</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Edit Client</a>
-                    <a class="dropdown-item" href="#">Edit User</a>
-                    <a class="dropdown-item" href="#">Edit Product</a>
-                  </div>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Edit Client</a>
+                        <a class="dropdown-item" href="#">Edit User</a>
+                        <a class="dropdown-item" href="#">Edit Product</a>
+                      </div>
+                </div>
 
-
+                <div class="container" >
                   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                    REPORTS  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">By Date</a>
-                    <a class="dropdown-item" href="#">By Warehouse</a>
-                    <a class="dropdown-item" href="#">Inventory</a>
-                  </div>
+                     REPORTS  </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">By Date</a>
+                        <a class="dropdown-item" href="#">By Warehouse</a>
+                        <a class="dropdown-item" href="#">Inventory</a>
+                      </div>
+                   </div>
             </div>
             <br>
-            <a href="{% url 'home' %}">  <h4 class="alert-dark" >Logout</h4></a>
+            <a href="{% url 'home' %}">  <h5 class="alert-dark" >Logout</h5></a>
 
         </div>
 
