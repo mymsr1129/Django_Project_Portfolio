@@ -19,45 +19,52 @@
 </head>
 
 <body>
+<div class="conatiner-fluid">
+    <div class="navbar navbar-expand-sm bg-dark navbar-dark text-white">
+       <a class="navbar-brand" href="{% url 'home' %}">
+         <img src="{% static 'portfolio/myNewLogo.png' %}" width="35" height="35" class="d-inline-block align-top" alt="My Logo"></a>
 
-<div class="navbar navbar-expand-sm bg-dark navbar-dark text-white">
-   <a class="navbar-brand" href="{% url 'home' %}">
-     <img src="{% static 'portfolio/myLogo.png' %}" width="35" height="35" class="d-inline-block align-top" alt="My Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+       <div class="container">
+       <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-   <div class="container">
-   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'admin' %}">ADMIN   |</a>
+        </li>
 
-  <ul class="navbar-nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link" href="{% url 'admin' %}">ADMIN   |</a>
-    </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CLIENT   |</a>
+        </li>
 
-    <li class="nav-item">
-      <a class="nav-link" href="#">CLIENT   |</a>
-    </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TEAM LEADER   |</a>
+        </li>
 
-    <li class="nav-item">
-      <a class="nav-link" href="#">TEAM LEADER   |</a>
-    </li>
+        <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                INSTALLER  |
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="{% url 'view_product' %}">View Products</a>
+                <a class="dropdown-item" href="#">Link...</a>
+              </div>
+        </li>
 
-    <li class="nav-item">
-      <a class="nav-link" href="#">INSTALLER   |</a>
-    </li>
 
-    <li class="nav-item text-white ">
-            <a class="nav-link" href="https://www.installworx.co.nz"  target="_blank">INSTALLWORX  | </a>
-    </li>
+        <li class="nav-item text-white ">
+                <a class="nav-link" href="https://www.installworx.co.nz"  target="_blank">INSTALLWORX  | </a>
+        </li>
 
-     </ul>
-   </div>
-  </div>
+         </ul>
+       </div>
+      </div>
+    </div>
+    </nav>
 </div>
-</nav>
-
 
 
     {% block content %}{% endblock %}

@@ -27,6 +27,11 @@ urlpatterns = [
     path('add_product/', views.admin_add_product, name='admin_add_product'),
     path('add_user/', views.admin_add_user, name='admin_add_user'),
     path('add_client/', views.admin_add_client, name='admin_add_client'),
+    path('transaction/', views.transaction, name='transaction'),
+    path('detail/', views.transaction_detail, name='transaction_detail'),
+    path('invent_report/', views.invent_report, name='invent_report'),
+    path('view_product/', views.view_product, name='view_product'),
+
     path('blog/', include('blog.urls')),
 ]
 
