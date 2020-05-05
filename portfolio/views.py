@@ -8,6 +8,9 @@ def home(request):
 def admin(request):
     return render(request, 'portfolio/admin.html')
 
+def view(request):
+    return render(request, 'portfolio/view.html')
+
 def admin_add_product(request):
     return render(request, 'portfolio/admin_add_product.html')
 
@@ -18,13 +21,13 @@ def admin_add_client(request):
     return render(request, 'portfolio/admin_add_client.html')
 
 def transaction(request):
-    return render(request, 'portfolio/transaction.html')
+    return render(request, 'worx/transaction.html')
 
 def transaction_detail(request):
-    return render(request, 'portfolio/transaction_detail.html')
+    return render(request, 'worx/transaction_detail.html')
 
 def invent_report(request):
-    return render(request, 'portfolio/invent_report.html')
+    return render(request, 'worx/invent_report.html')
 
 def view_product(request):
-    return render(request, 'portfolio/view_product.html')
+    return render(request, 'worx/view_product.html')

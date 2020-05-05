@@ -31,6 +31,7 @@ urlpatterns = [
     path('detail/', views.transaction_detail, name='transaction_detail'),
     path('invent_report/', views.invent_report, name='invent_report'),
     path('view_product/', views.view_product, name='view_product'),
+    path('view/', views.view, name='view'),
 
     path('blog/', include('blog.urls')),
 ]
