@@ -11,14 +11,14 @@ def admin(request):
 def view(request):
     return render(request, 'portfolio/view.html')
 
-def admin_add_product(request):
-    return render(request, 'portfolio/admin_add_product.html')
+def edit_project(request):
+    return render(request, 'portfolio/edit_project.html')
 
-def admin_add_user(request):
-    return render(request, 'portfolio/admin_add_user.html')
+def add_project(request):
+    return render(request, 'portfolio/add_project.html')
 
 def admin_add_client(request):
-    return render(request, 'portfolio/admin_add_client.html')
+    return render(request, 'portfolio/edit_project.html')
 
 def transaction(request):
     return render(request, 'worx/transaction.html')
